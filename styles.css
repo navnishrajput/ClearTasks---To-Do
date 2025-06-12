@@ -1,0 +1,212 @@
+/* Modern and attractive CSS for To-Do List */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+body.dark-mode {
+  background: #121212;
+  color: #e0e0e0;
+}
+
+.container {
+  background: #2c2c54;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  max-width: 400px;
+  transition: background 0.3s ease;
+}
+
+body.dark-mode .container {
+  background: #1e1e1e;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.input-group {
+  display: flex;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.input-group input[type="text"],
+.input-group input[type="date"] {
+  flex: 1 1 120px;
+  min-width: 120px;
+}
+
+#add-btn {
+  flex: 0 0 auto;
+  padding: 0 1.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  background: #ff6b6b;
+  color: white;
+  font-weight: 700;
+  border: none;
+  transition: background 0.3s ease;
+}
+
+#add-btn:hover {
+  background: #ff4757;
+}
+
+#todo-input {
+  flex: 1;
+  padding: 0.75rem 1rem;
+  border: none;
+  border-radius: 8px 0 0 8px;
+  font-size: 1rem;
+  outline: none;
+  background: #fff;
+  color: #333;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+body.dark-mode #todo-input {
+  background: #333;
+  color: #e0e0e0;
+}
+
+#add-btn {
+  background: #ff6b6b;
+  border: none;
+  padding: 0 1.5rem;
+  color: white;
+  font-weight: 700;
+  border-radius: 0 8px 8px 0;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#add-btn:hover {
+  background: #ff4757;
+}
+
+.input-group input[type="text"],
+.input-group input[type="date"] {
+  padding: 0.5rem 0.75rem;
+  margin-left: 0.5rem;
+  border-radius: 8px;
+  border: none;
+  font-size: 1rem;
+  outline: none;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+body.dark-mode .input-group input[type="text"],
+body.dark-mode .input-group input[type="date"] {
+  background: #333;
+  color: #e0e0e0;
+}
+
+.filter-group {
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #fff;
+}
+
+.filter-group label {
+  font-weight: 700;
+}
+
+.filter-group select {
+  padding: 0.4rem 0.6rem;
+  border-radius: 8px;
+  border: none;
+  font-size: 1rem;
+  outline: none;
+  cursor: pointer;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+body.dark-mode .filter-group select {
+  background: #333;
+  color: #e0e0e0;
+}
+
+#todo-list {
+  list-style: none;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+#todo-list li {
+  background: #40407a;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  margin-bottom: 0.75rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background 0.3s ease;
+  cursor: grab;
+}
+
+#todo-list li:active {
+  cursor: grabbing;
+}
+
+body.dark-mode #todo-list li {
+  background: #2a2a3d;
+}
+
+#todo-list li.completed {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+.todo-text {
+  flex: 1;
+  cursor: pointer;
+}
+
+.todo-category {
+  font-style: italic;
+  color: #ccc;
+  margin-left: 0.5rem;
+}
+
+.todo-duedate {
+  font-size: 0.85rem;
+  color: #ff6b6b;
+  margin-left: 0.5rem;
+}
+
+.delete-btn {
+  background: transparent;
+  border: none;
+  color: #ff6b6b;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.delete-btn:hover {
+  color: #ff4757;
+}
