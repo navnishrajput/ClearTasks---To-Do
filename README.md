@@ -37,5 +37,5 @@ This is a modern-themed, attractive To-Do List web application built with HTML, 
 - `script.js` - JavaScript for task management and UI interactions
 
 ## 📜 License
-
 This project is open source and free to use.
+
