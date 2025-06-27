@@ -2,6 +2,9 @@
 
 This is a modern-themed, attractive To-Do List web application built with HTML, CSS, and JavaScript. It includes several useful features to enhance productivity and user experience.
 
+## DEMO IMAGE
+[View Image](https://ibb.co/PsbH7nJt)
+
 ## ✨ Features
 
 - ➕ Add tasks with optional category and due date
